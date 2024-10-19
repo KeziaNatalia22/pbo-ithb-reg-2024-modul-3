@@ -15,7 +15,7 @@ class MSarjana extends User {
 
     public MSarjana(String nama, String alamat, String ttl, String telp) {
         super(nama, alamat, ttl, telp);
-    } 
+    }  
 }
 class MMagister extends User {
     private String jurusan;
