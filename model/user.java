@@ -1,3 +1,5 @@
+package model;
+
 abstract class User {
     private String nama, alamat, ttl, telp;
 
@@ -42,6 +44,6 @@ abstract class User {
 
 }
 
-public class Us_er {
+public class user {
     
 }

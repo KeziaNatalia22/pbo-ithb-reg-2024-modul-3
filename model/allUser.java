@@ -1,3 +1,5 @@
+package model;
+
 import java.util.*;
 
 class MSarjana extends User {
@@ -92,7 +94,7 @@ class Dosen extends Staff {
     }
 }
 
-public class AllUserType {
+public class allUser {
     public static void main(String[] args) {
         
     }
