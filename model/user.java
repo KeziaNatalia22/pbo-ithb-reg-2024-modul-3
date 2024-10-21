@@ -1,6 +1,6 @@
 package model;
 
-abstract class User {
+abstract class User implements method{
     private String nama, alamat, ttl, telp;
 
     public User(String nama, String alamat, String ttl, String telp) {
@@ -40,6 +40,11 @@ abstract class User {
 
     public void setTelp(String telp) {
         this.telp = telp;
+    }
+
+    @Override
+    public String toString(){
+        return "Nama: " + nama + "\nAlamat: " + alamat + "\nTTL: " + ttl + "\nTelepon: " + telp;
     }
 
 }
