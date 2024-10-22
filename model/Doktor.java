@@ -1,6 +1,6 @@
 package model;
 
-public class Doktor extends Mahasiswa { // Modifier public ditambahkan
+public class Doktor extends Mahasiswa { 
     private String judulPenelitianDisertasi;
     private int ns1, ns2, ns3;
 
@@ -46,7 +46,7 @@ public class Doktor extends Mahasiswa { // Modifier public ditambahkan
 
     @Override
     public String toString() {
-        return super.toString() + "\nJudul Penelitian Disertasi : " + judulPenelitianDisertasi + "\nNilai Sidang 1 : " + ns1 + "\nNilai Sidang 2 : " + ns2 + "\nNilai Sidang 3 : " + ns3;
+        return "Type : " + this.getClass().getSimpleName() + "\n" + super.toString() + "\nJudul Penelitian Disertasi : " + judulPenelitianDisertasi + "\nNilai Sidang 1 : " + ns1 + "\nNilai Sidang 2 : " + ns2 + "\nNilai Sidang 3 : " + ns3;
     }
 }
 

@@ -1,6 +1,6 @@
 package model;
 
-class MatkulPilihan extends Matkul {
+public class MatkulPilihan extends Matkul {
     private int jmlMinimumMhs;
 
     public MatkulPilihan(String kodeMatkul, int sks, String namaMatkul, int jmlMinimumMhs) {

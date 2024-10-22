@@ -2,7 +2,7 @@ package model;
 
 import java.util.*;
 
-abstract class Matkul {
+public abstract class Matkul {
     private String kodeMatkul;
     private int sks;
     private String namaMatkul;
@@ -40,31 +40,5 @@ abstract class Matkul {
     @Override
     public String toString() {
         return "Kode Matkul: " + kodeMatkul + "\nNama Matkul: " + namaMatkul + "\nSKS: " + sks;
-    }
-}
-
-
-
-
-abstract class Presensi {
-    private Date tanggal;
-    private int status;
-
-    public Presensi(Date tanggal, int status) {
-        this.tanggal = tanggal;
-        this.status = status;
-    }
-
-    public Date getTanggal() {
-        return tanggal;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    @Override
-    public String toString() {
-        return "Tanggal: " + tanggal + "\nStatus: " + status;
     }
 }

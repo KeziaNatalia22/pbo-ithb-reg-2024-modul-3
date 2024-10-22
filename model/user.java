@@ -1,6 +1,6 @@
 package model;
 
-abstract class User implements method{
+public abstract class User implements method{
     private String nama, alamat, ttl, telp;
 
     public User(String nama, String alamat, String ttl, String telp) {
@@ -47,8 +47,4 @@ abstract class User implements method{
         return "Nama: " + nama + "\nAlamat: " + alamat + "\nTTL: " + ttl + "\nTelepon: " + telp;
     }
 
-}
-
-public class user {
-    
 }

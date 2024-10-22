@@ -13,7 +13,7 @@ public class DosenTetap extends Dosen {
         this.salary = salary;
     }
 
-    public DosenTetap(String nama, String alamat, String ttl, String telepon, String nik, String departemen, ArrayList<MatkulNgajar> matkulAjarList, double salary) {
+    public DosenTetap(String nama, String alamat, String ttl, String telepon, String nik, String departemen, ArrayList<MatkulAjar> matkulAjarList, double salary) {
         super(nama, alamat, ttl, telepon, nik, departemen, matkulAjarList);
         this.salary = salary;
     }

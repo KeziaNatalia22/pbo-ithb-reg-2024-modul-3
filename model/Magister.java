@@ -2,8 +2,8 @@ package model;
 
 import java.util.*;
 
-public class Magister extends Mahasiswa { // Modifier public ditambahkan
-    private ArrayList<Matkul> matakuliah;
+public class Magister extends Mahasiswa { 
+    private ArrayList<MatkulAmbil> matakuliah;
     private String judulPenelitianTesis;
 
     public String getJudulPenelitian() {
@@ -14,15 +14,15 @@ public class Magister extends Mahasiswa { // Modifier public ditambahkan
         this.judulPenelitianTesis = judulPenelitian;
     }
 
-    public ArrayList<Matkul> getMatakuliah() {
+    public ArrayList<MatkulAmbil> getMatakuliah() {
         return matakuliah;
     }
 
-    public void setMatakuliah(ArrayList<Matkul> matakuliah) {
+    public void setMatakuliah(ArrayList<MatkulAmbil> matakuliah) {
         this.matakuliah = matakuliah;
     }
 
-    public Magister(String nama, String alamat, String ttl, String telp, String NIM, String jurusan, ArrayList<Matkul> matakuliah, String judulPenelitianTesis) {
+    public Magister(String nama, String alamat, String ttl, String telp, String NIM, String jurusan, ArrayList<MatkulAmbil> matakuliah, String judulPenelitianTesis) {
         super(nama, alamat, ttl, telp, jurusan, NIM);
         this.matakuliah = matakuliah;
         this.judulPenelitianTesis = judulPenelitianTesis;
@@ -30,7 +30,7 @@ public class Magister extends Mahasiswa { // Modifier public ditambahkan
 
     @Override
     public String toString() {
-        return super.toString() + "\nMatakuliah " + matakuliah;
+        return "Type : " + this.getClass().getSimpleName() + "\n" + super.toString() + "\nMatakuliah " + matakuliah;
     }
 }
 
