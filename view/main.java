@@ -44,7 +44,7 @@ public class main {
         presensiListMhs2.add(new PresensiMhs(new Date(), 1, "12:30"));  // Mahasiswa hadir jam 12:30 (siang)
         presensiListMhs2.add(new PresensiMhs(new Date(), 0, "15:00"));  // Mahasiswa tidak hadir jam 15:00
         
-        System.out.println(presensiListMhs2.toString());
+        // System.out.println(presensiListMhs2.toString());
         //Matkul Ambil
         MatkulAmbil matkulA1 = new MatkulAmbil("IF-001", 4, "Algoritma", presensiListMhs2, 80.1, 90.0, 100.0);
         MatkulAmbil matkulA2 = new MatkulAmbil("IF-002", 3, "Matvek", presensiListMhs, 79, 90.0, 100.0);
